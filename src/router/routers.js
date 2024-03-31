@@ -1,0 +1,54 @@
+
+export const routes=[
+    {
+        path:"/",
+        redirect:'/showGoods'
+    },
+    {
+        path:"/login",
+        component:()=>import("../pages/login/index.vue"),
+        name:"login"
+    },
+    {
+        path:"/register",
+        component:()=>import("../pages/register/index.vue"),
+        name:"register"
+    },
+    {
+        path:"/showGoods",
+        component:()=>import("../pages/showGoods/index.vue"),
+        name:"showGoods"
+    },
+    {
+        path:"/personalInfo",
+        component:()=>import("../pages/personalInfo/index.vue"),
+        name:"personalInfo"
+    },
+    {
+        path:"/NonPersonalInfo",
+        component:()=>import("../pages/NonPersonalInfo/index.vue"),
+        name:"NonPersonalInfo"
+    },
+    {
+        path:"/goodsDetail",
+        component:()=>import("../pages/goodsDetail/index.vue"),
+        name:"goodsDeatil"
+    },
+    {
+        path:"/publishOrModifyGoods",
+        component:()=>import("../pages/publishOrModifyGoods/index.vue"),
+        name:"publishOrModifyGoods"
+    },
+    {
+        path:"/purchaseInfo",
+        component:()=>import("../pages/purchaseInfo/index.vue"),
+        name:"purchaseInfo"
+    },
+    {
+        path:"/publishPurchaseInfo",
+        component:()=>import("../pages/publishPurchaseInfo/index.vue"),
+        name:"publishPurchaseInfo"
+    }
+
+]
+   
